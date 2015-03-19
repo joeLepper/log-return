@@ -1,0 +1,11 @@
+{
+  "name": "log-return",
+  "version": "1.0.0",
+  "description": "A simple debug library for logging a return function",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joe Lepper <josephlepper@gmail.com> (http://joelepper.com/)",
+  "license": "MIT"
+}
