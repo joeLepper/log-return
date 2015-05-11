@@ -1,4 +1,4 @@
-Return-log
+Log-return
 ==========
 
 Let's say you're obnoxious and you write code like this:
@@ -9,8 +9,8 @@ function mindWarp (a) {
   // do stuff
   return (
     { c: b
-    , d: e
-    , f: g
+    , d: 'e'
+    , f: 'g'
     }
   )
 }
@@ -18,21 +18,25 @@ function mindWarp (a) {
 
 But there's a bug in there and you'd like to see it. Easy.
 
-`npm i return-log`
+`npm i log-return`
 
 Then:
 
 ``` javascript
-var log = require('return-log')
+var log = require('log-return')
 
 function mindWarp (a) {
   var b = a * 2
   // do stuff
   return log(
     { c: b
-    , d: e
-    , f: g
-    }
+    , d: 'e'
+    , f: 'g'
+    },
+    [
+      "Dad always thought laughter was the best medicine, which I guess is why several of us died of tuberculosis.",
+      "- Jack Handy"
+    ]
   )
 }
 ```
